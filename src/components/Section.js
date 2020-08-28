@@ -1,13 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
-import "./Section.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Section({
-  lightBg,
-  topLine,
-  lightText,
-  lightTextDesc,
+  subject,
   headline,
   description,
   buttonLabel,
@@ -15,32 +13,25 @@ function Section({
   alt,
   imgStart,
 }) {
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  }, []);
   return (
     <>
-      <div className={lightBg ? "home__section" : "home__section darkBg"}>
+      <div className="home__section darkBg">
         <div className="container">
           <div
-            className="row home__section-row"
+            className="row home__section--row"
             style={{
               display: "flex",
               flexDirection: imgStart === "start" ? "row-reverse" : "row",
             }}
           >
-            <div className="col">
-              <div className="home__section-text-wrapper">
-                <div className="top-line">{topLine}</div>
-                <h1 className={lightText ? "heading" : "heading dark"}>
-                  {headline}
-                </h1>
-                <p
-                  className={
-                    lightTextDesc
-                      ? "home__section-subtitle"
-                      : "home__section-subtitle dark"
-                  }
-                >
-                  {description}
-                </p>
+            <div className="col" data-aos="fade-up">
+              <div className="home__section--text-wrapper">
+                <div className="subject-heading">{subject}</div>
+                <h1 className="heading">{headline}</h1>
+                <p className="home__section--subtitle">{description}</p>
                 <Link to="/sign-up">
                   <Button buttonSize="btn--wide" buttonColor="secondary">
                     {buttonLabel}
@@ -48,9 +39,9 @@ function Section({
                 </Link>
               </div>
             </div>
-            <div className="col">
-              <div className="home__section-img-wrapper">
-                <img src={img} alt={alt} className="home__section-img" />
+            <div className="col" data-aos="fade-up" data-aos-delay="50">
+              <div className="home__section--img-wrapper">
+                <img src={img} alt={alt} className="home__section--img" />
               </div>
             </div>
           </div>
