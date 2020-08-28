@@ -33,7 +33,7 @@ function Plans() {
                 <p>per month</p>
                 <ul className="pricing__container--features">
                   <li>100 Transactions</li>
-                  <li>2% Cash Back</li>
+                  <li>Weekly Graph View</li>
                   <li>10,000 Limit</li>
                 </ul>
                 <Button buttonSize="btn--wide" buttonColor="secondary">
@@ -56,7 +56,7 @@ function Plans() {
                 <p>per month</p>
                 <ul className="pricing__container--features">
                   <li>1000 Transactions</li>
-                  <li>3.5% Cash Back</li>
+                  <li>Monthly Graph View</li>
                   <li>100,000 Limit</li>
                 </ul>
                 <Button buttonSize="btn--wide" buttonColor="secondary">
@@ -79,7 +79,7 @@ function Plans() {
                 <p>per month</p>
                 <ul className="pricing__container--features">
                   <li>Unlimited Transactions</li>
-                  <li>5% Cash Back</li>
+                  <li>Annual Graph View</li>
                   <li>Unlimited Spending</li>
                 </ul>
                 <Button buttonSize="btn--wide" buttonColor="secondary">

@@ -76,7 +76,7 @@
 
     &--icons {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       width: 240px;
 
@@ -97,7 +97,6 @@
     display: flex;
     align-items: center;
     margin-bottom: 16px;
-    font-style: italic;
   }
 }
 

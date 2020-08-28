@@ -1,8 +1,8 @@
 export const homeObjOne = {
-  subject: "Exclusive Access",
+  subject: "Exclusive Bank for Streamers",
   headline: "Next level online banking",
   description:
-    "Get access to our exclusive online banking in the cloud that allows you to send unlimited transactions, track your spendings and more without getting charged any fees",
+    "Get access to our exclusive online banking in the cloud made spesifically for streamers. Send unlimited transactions, track your spendings and more without getting charged any fees",
   buttonLabel: "Get Started",
   imgStart: "",
   img: "images/Bank.svg",
@@ -12,8 +12,7 @@ export const homeObjOne = {
 export const homeObjTwo = {
   subject: "EASY SETUP",
   headline: "Super fast and simple setup process",
-  description:
-  "Get set up in minutes. We have a fast and easy setup",
+  description: "Get set up in minutes. We have a fast and easy setup",
   buttonLabel: "Start Now",
   imgStart: "start",
   img: "images/OnlineBanking.svg",

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
 import { Button } from "./Button";
 import { IconContext } from "react-icons/lib";
 
@@ -30,7 +31,6 @@ function Navbar() {
         <div className="navbar">
           <div className="navbar__container container">
             <Link to="/" className="navbar--logo" onClick={closeMobileMenu}>
-
               StreamerCred
             </Link>
             <div className="menu-icon" onClick={handleClick}>
@@ -80,6 +80,17 @@ function Navbar() {
                     </Button>
                   </Link>
                 )}
+              </li>
+              <li className="navbar__menu--item">
+                <a
+                  href="https://github.com/JSGehlen/streamercred"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="navbar--links"
+                  onClick={closeMobileMenu}
+                >
+                  <AiFillGithub />
+                </a>
               </li>
             </ul>
           </div>

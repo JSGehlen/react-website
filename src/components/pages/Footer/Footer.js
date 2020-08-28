@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -34,40 +34,25 @@ function Footer() {
           <Link to="/" className="social__logo">
             StreamerCred
           </Link>
-          <small className="copyright">StreamerCred © 2020</small>
+          <small className="copyright">Jeremy Gehlen © 2020</small>
           <div className="social__wrap--icons">
-            <Link
+            <a
               className="social__wrap--icons__link"
-              to="/"
-              target="_blank"
-              aria-label="Facebook"
-            >
-              <FaFacebook />
-            </Link>
-            <Link
-              className="social__wrap--icons__link"
-              to="/"
-              target="_blank"
-              aria-label="Instagram"
-            >
-              <FaInstagram />
-            </Link>
-            <Link
-              className="social__wrap--icons__link"
-              to="/"
-              target="_blank"
-              aria-label="Twitter"
-            >
-              <FaTwitter />
-            </Link>
-            <Link
-              className="social__wrap--icons__link"
-              to="/"
+              href="https://www.linkedin.com/in/jeremy-gehlen/"
+              rel="noopener noreferrer"
               target="_blank"
               aria-label="LinkedIn"
             >
               <FaLinkedin />
-            </Link>
+            </a>
+            <a
+              href="https://github.com/JSGehlen/streamercred"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social__wrap--icons__link"
+            >
+              <AiFillGithub />
+            </a>
           </div>
         </div>
       </section>

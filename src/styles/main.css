@@ -248,9 +248,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -276,7 +275,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 16px;
-  font-style: italic;
 }
 
 .copyright {
@@ -460,7 +458,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-style: italic;
 }
 
 @media (max-width: 991px) {
