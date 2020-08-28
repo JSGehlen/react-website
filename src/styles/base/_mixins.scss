@@ -1,0 +1,11 @@
+@mixin pocket {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin portable {
+  @media (max-width: 991px) {
+    @content;
+  }
+}

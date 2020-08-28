@@ -57,30 +57,36 @@
 .btn--medium:hover,
 .btn--mobile:hover {
   transition: all 0.3s ease-out;
-  background: #fff;
-  color: #202020;
+  background: #202020;
+  color: #fff;
+  border: 1px solid #8b31ee;
+  border-image-source: linear-gradient(45deg, #8b31ee, #5d19fe);
+  border-image-slice: 1;
 }
 
 .btn--wide:hover {
+  transition: all 0.3s ease-out;
+  background: linear-gradient(45deg, #8b31ee, #5d19fe);
   color: #fff;
-  background-color: #00909e;
-  transition: all o.2s ease-out;
+  border: 1px solid transparent;
 }
 
 .primary {
-  background-color: #142850;
+  background-color: #041b29;
   color: #fff;
   border: none;
 }
 
 .secondary {
-  background-color: #27496d;
+  background: #202020;
   color: #fff;
-  border: none;
+  border: 1px solid #8b31ee;
+  border-image-source: linear-gradient(45deg, #8b31ee, #5d19fe);
+  border-image-slice: 1;
 }
 
 .tertiary {
-  background-color: #00909e;
+  background-color: #dd3e3e;
   color: #fff;
   border: none;
 }

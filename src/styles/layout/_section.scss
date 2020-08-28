@@ -1,0 +1,43 @@
+.home {
+  &__section {
+    color: #fff;
+    padding: 160px 0;
+    @include portable {
+      padding: 60px 0;
+    }
+    &---row {
+      align-items: center;
+    }
+
+    &--text-wrapper {
+      max-width: 540px;
+      padding-top: 0;
+      padding-bottom: 60px;
+
+      @include pocket {
+        padding-bottom: 65px;
+      }
+    }
+
+    &--subtitle {
+      max-width: 440px;
+      margin-bottom: 35px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    
+    &--img {
+      max-width: 95%;
+      margin-right: 0;
+      margin-top: 0;
+      margin-left: 10px;
+      padding-right: 0;
+
+
+      &--wrapper {
+        max-width: 555px;
+      }
+    }
+  }
+}
